@@ -356,7 +356,7 @@ console.log("Результат:", result)
 
 {
 const userText = prompt("Введіть рядок: ")
-const forbiddenWords = ["хуй", "бля", "путин"]
+const forbiddenWords = ["бляха", "муха", "путин"]
 const words = userText.split(" ")
 const filteredWords = words.map(word => forbiddenWords.includes(word.toLowerCase()) ? "BEEP" : word)//добавил toLowerCase, что-бы в случае ввода слова заглавными буквами, они автоматически становились маленькими
 const result = filteredWords.join(" ")
