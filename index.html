@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="slider">
+    <div class="sliders">
+        <label for="email">Ваш Еmail:</label>
+        <input type="email" id="email" placeholder="Enter your email">
+        <label for="password">Ваш пароль:</label>
+        <input type="password" id="password" placeholder="Enter your password">
+    </div>
+    <div class="sliders">
+        <div class="input-container">
+            <label for="birthdate">Ваша дата рождения:</label>
+            <input type="date" id="birthdate">
+        </div>
+        <div class="input-container">
+            <label for="gender">Ваш пол:</label>
+            <select id="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <div class="input-container">
+            <label for="name">Ваше Ф.И.О:</label>
+            <input type="text" id="name" placeholder="Enter your name">
+        </div>
+    </div>
+    <div class="sliders">
+        <div class="input-container">
+            <label for="zodiac">Ваш знак зодиака:</label>
+            <input type="text" id="zodiac" placeholder="Введите знак зодиака">
+        </div>
+        <div class="input-container">
+            <label for="weight">Ваш вес:</label>
+            <input type="number" id="weight" placeholder="Введите ваш вес">
+        </div>
+        <div class="input-container">
+            <label for="height">Ваш рост:</label>
+            <input type="number" id="height" placeholder="Введите ваш рост">
+        </div>
+        <button id="saveButton">Сохранить данные</button>
+    </div>
+    <div class="sliders">
+        <div class="input-container">
+            <label>Количество людей заполнивших анкету:</label>
+            <p id="peopleCount">0</p>
+            <label >Самый высокий:</label>
+            <p id="highest"></p>
+            <label >Совпадения по именам пользователей:</label>
+            <p id="coincidences"></p>
+            <label>Общий вес:</label>
+            <p id="totalWeight"></p>
+            <button id="resetButton">Сбросить данные</button>
+        </div>
+    </div>
+</div>
+          
+
+
+
+
+<script src="homework.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+      $('.slider').slick({
+        autoplay: false,
+        dots: true,
+        arrows: false,
+        draggable: false    
+    })
+})
+</script>
+</body>
+</html>
