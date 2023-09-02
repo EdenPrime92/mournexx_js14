@@ -1,0 +1,41 @@
+body {
+    background-image: linear-gradient(to right, #2b2b2b9d, #02417278);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 400px;
+    width: 400px;
+}
+
+.container div {
+    width: 30%;
+    height: 30%;
+    background: linear-gradient(to right, #00ffa2c5, #02cbe6d6, #00ffa2c5);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 10px rgba(5, 5, 5, 0.596);
+}
+
+#btn {
+    position: relative;
+    right: 275px;
+    top: 250px;
+    width: 150px;
+    height: 50px;
+    background: linear-gradient(to right, rgba(255, 90, 1, 0.791), rgba(255, 179, 0, 0.854), rgba(255, 90, 1, 0.791));
+    border-radius: 25px;
+}
+
+.container div.selected {
+    background: linear-gradient(to right, #fad727d2, #fe3737d1, #fad727d2);
+    color: #fff;
+}
