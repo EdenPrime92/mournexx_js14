@@ -1,11 +1,5 @@
 fetch('https://swapi.dev/api/planets/')
-    .then(response => {
-        if (response.status === 200) {
-            return response.json()
-        } else {
-            throw new Error(`Ошибка при выполнении запроса : ${response.status}`)
-        }
-    })
+    .then(response => response.json())
     .then(data => {
         createDivElements()
         data.results.forEach((planet, index) => {
@@ -83,3 +77,12 @@ function fetchCharacters(residents) {
             });
     });
 }
+
+
+// .then(response => {
+//     if (response.status === 200) {
+//         return response.json()
+//     } else {
+//         throw new Error(`Ошибка при выполнении запроса : ${response.status}`)
+//     }
+// })
