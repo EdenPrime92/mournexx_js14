@@ -1,0 +1,108 @@
+body {
+    background: linear-gradient(to left, rgb(250, 182, 56), rgb(173, 114, 3), rgb(253, 190, 73));
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 900px;
+}
+
+.riddle {
+    font-size: 40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    white-space: pre-line;
+    text-align: center;
+    border: 3px solid black;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: bisque;
+}
+
+.answer {
+    font-size: 40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: bisque;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.letter {
+    width: 70px;
+    height: 60px;
+    border: 2px solid black;
+}
+
+.input {
+    height: 40px;
+    width: 40px;
+    background-color: bisque;
+    border: 2px solid black;
+}
+
+.btn {
+    width: 170px;
+    height: 40px;
+    background-color: bisque;
+    border-radius: 15px;
+}
+
+.attempts {
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.startButton {
+    width: 300px;
+    height: 150px;
+    border: 2px solid white;
+    border-radius: 15px;
+    background-color: black;
+    color: rgb(255, 196, 196);
+    position: relative;
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.startButton::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    animation: shadowAnimation 6s linear infinite;
+}
+
+@keyframes shadowAnimation {
+    0% {
+        box-shadow: 0 0 10px 0 rgb(139, 1, 189),
+            0 0 20px 5px blue,
+            0 0 30px 10px red;
+    }
+
+    25% {
+        box-shadow: 0 0 10px 0 red,
+            0 0 20px 5px rgb(139, 1, 189),
+            0 0 30px 10px blue;
+    }
+
+    50% {
+        box-shadow: 0 0 10px 0 blue,
+            0 0 20px 5px red,
+            0 0 30px 10px rgb(139, 1, 189);
+    }
+
+    75% {
+        box-shadow: 0 0 10px 0 rgb(139, 1, 189),
+            0 0 20px 5px blue,
+            0 0 30px 10px red;
+    }
+
+    100% {
+        box-shadow: 0 0 10px 0 red,
+            0 0 20px 5px rgb(139, 1, 189),
+            0 0 30px 10px blue;
+    }
+}
