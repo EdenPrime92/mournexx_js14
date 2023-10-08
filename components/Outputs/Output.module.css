@@ -1,0 +1,16 @@
+.Output {
+    color: rgb(0, 0, 0);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: Copperplate Gothic;
+    background-color: rgba(255, 255, 255, 0.699);
+    border-radius: 30px;
+    display: inline-block;
+    line-height: 40px;
+    box-shadow: 0 0 20px white;
+    font-size: 20px;
+    width: 40%;
+    text-align: center;
+    position: relative;
+    top: 100px;
+}
